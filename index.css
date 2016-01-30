@@ -1,0 +1,129 @@
+html, body, .container-fluid {
+    font-family: Montserrat;
+    padding: 0;
+    margin: 0;
+}
+.main-content {
+    background-color: #f5f5f5;
+    box-shadow: inset -5px 0px 5px #eeeeee;
+    padding: 20px 0 0 10px;
+    margin: 0;
+}
+
+.content .filler {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.avatar-wrapper {
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.avatar {
+    height: 100px;
+    margin: auto;
+}
+
+.basic-info {
+    margin: 0 0 20px 0;
+    height: 100px;
+}
+
+.basic-info .wrapper {
+    height: 300px;
+}
+
+
+.mail {
+    margin: 0 0 0 0;
+    height: 40px;
+}
+
+.basic-info .name {
+    font: 2.5em "Montserrat", sans-serif;
+    font-weight: 100;
+}
+
+.basic-info .surname {
+    color: #dddddd;
+    margin: 0 0 0 0;
+    font: 3em "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+.profession {
+    margin: 15px 0 0 0;
+    font-weight: 900;
+    color: #888888;
+}
+
+.email {
+    margin: 10px 0 20px 0;
+    font: 1em "Montserrat", sans-serif;
+    color: #aaaaaa;
+}
+
+.address {
+    margin: 5px 0 0 0;
+    font: 1em "Montserrat", sans-serif;
+    color: #666666;
+}
+
+.address-detail {
+    margin: 5px 0 0 20px;
+    color: #aaaaaa;
+}
+
+.timelines {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+
+.timeline {
+    margin: -1px 0 0 0 ;
+    padding: 0;
+}
+
+.timeline .contents {
+    margin: 60px 0 0 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 4px #999999;
+}
+
+.timeline svg {
+    padding: 0;
+}
+
+.timeline .content {
+    margin: 0 0 0 0;
+    color: #666666;
+    font-family: Montserrat;
+}
+
+.timeline .year {
+    color: #fd5959;
+    font-size: 0.7em;
+}
+
+
+.affix .title {
+    margin: 30px 0 0 10px;
+    font-family: Montserrat;
+    font-size: 1.5em;
+    color: #fd5959;
+}
+
+.affix .contents {
+    margin: 20px 0 10px 30px;
+    font-family: Montserrat;
+    color: #888888;
+}
+
+.affix .content {
+    margin: 10px 0 0 0;
+}

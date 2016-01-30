@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+<head>
+    <meta charset="UTF-8">
+    <script type='text/javascript' src='http://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=3.4.2'></script>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link href="http://fonts.useso.com/fonts#UsePlace:use/Collection:Montserrat:400,700" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/vue/1.0.15/vue.js"></script>
+    <script src="index.js"></script>
+    <title>{{name.name}} {{name.surname}}</title>
+</head>
+<body class="container-fluid">
+    <div class="main-content col-md-4">
+        <div class="filler col-md-12"></div>
+        <div class="avatar-wrapper col-md-4">
+            <img src="media/avatar.png" class="avatar"/>
+        </div>
+        <div class="basic-info col-md-8">
+
+            <div class="name-wrapper col-md-8">
+                <div class="name">{{name.name}}</div>
+                <div class="surname">{{name.surname}}</div>
+            </div>
+        </div>
+        <div class="mail-wrapper col-md-2">
+            <img src="./media/mail.png" class="mail"/>
+        </div>
+
+        <div class="email col-md-10">Mail: {{email}}</div>
+        <div class="address col-md-10">Address:<br/>
+            <div class="address-detail" v-for="address in address">
+                {{address}}
+             </div>
+        </div>
+        <div class="professions col-md-12" v-for="profession in professions">
+            <div class="profession">{{profession}}</div>
+        </div>
+
+        <div class="timelines col-md-12">
+            <div class="timeline col-md-12" v-for="item in timeline">
+                <svg height="200px" width="40px" class="col-md-2">
+                    <line x1="20" x2="20" y1="0" y2="200" stroke="#bbbbbb" fill="#000000" stroke-width="5"
+                          stroke-linecap="round"></line>
+                    <circle r="10" cx="20" cy="100" stroke="#999999" fill="#eeeeee"></circle>
+                </svg>
+                <div class="col-md-9 contents">
+                    <div class="year">
+                        {{item.year}}
+                    </div>
+                    <div class="content" v-for="content in item.contents">
+                        {{content}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="affix col-md-8">
+        <div class="skill col-md-12" v-for="item in affix">
+            <div class="title">
+                {{item.title}}
+            </div>
+            <div class="contents col-md-12">
+                <div class="content col-md-12" v-for="content in item.contents">
+                    {{content}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
